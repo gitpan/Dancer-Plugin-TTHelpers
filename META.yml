@@ -24,4 +24,4 @@ requires:
 resources:
   bugtracker: http://github.com/perlpilot/Dancer-Plugin-TTHelpers/issues
   repository: git://github.com/perlpilot/Dancer-Plugin-TTHelpers.git
-version: 0.001
+version: 0.002

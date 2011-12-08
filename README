@@ -3,7 +3,7 @@ NAME
     with Dancer + TT
 
 VERSION
-    version 0.001
+    version 0.002
 
 SYNOPSIS
     In your Dancer application's MyApp.pm file ...
@@ -105,7 +105,7 @@ DESCRIPTION
     "checkbox([OBJ], NAME, CHECKED, [ ATTR ])"
         Example:
 
-    "button([OBJ], NAME, VALUE, [ ATTR ])"
+    "button([OBJ], NAME, [VALUE], [ ATTR ])"
         Example:
 
     "hidden([OBJ], NAME, VALUE, [ ATTR ] )"

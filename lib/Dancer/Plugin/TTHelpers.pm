@@ -1,6 +1,6 @@
 package Dancer::Plugin::TTHelpers;
 {
-  $Dancer::Plugin::TTHelpers::VERSION = '0.001';
+  $Dancer::Plugin::TTHelpers::VERSION = '0.002';
 }
 # ABSTRACT: Useful routines for generating HTML for use with Dancer + TT
 
@@ -112,6 +112,7 @@ hook 'before_template' => sub {
         my $obj = shift if blessed $_[0];
         my $attributes = &process_attributes;
         my ($name, $value) = @_;
+        $value //= $name;
         return qq(<input type="button" name="$name" value="$value" $attributes />);
     };
 
@@ -146,7 +147,7 @@ Dancer::Plugin::TTHelpers - Useful routines for generating HTML for use with Dan
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -263,7 +264,7 @@ Example:
 
 Example:
 
-=item C<button([OBJ], NAME, VALUE, [ ATTR ])>
+=item C<button([OBJ], NAME, [VALUE], [ ATTR ])>
 
 Example:
 
