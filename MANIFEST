@@ -1,0 +1,9 @@
+Changes
+LICENSE
+MANIFEST
+META.yml
+Makefile.PL
+README
+docs/SubmittingPatches.pod
+lib/Dancer/Plugin/TTHelpers.pm
+t/00-basic.t
