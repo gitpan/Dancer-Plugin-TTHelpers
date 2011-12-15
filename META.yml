@@ -5,6 +5,7 @@ author:
 build_requires:
   Template: 0
   Test::More: 0
+  Test::XPath: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
@@ -16,6 +17,7 @@ meta-spec:
 name: Dancer-Plugin-TTHelpers
 requires:
   Dancer: 0
+  HTML::FormHelpers: 0
   Scalar::Util: 0
   Try::Tiny: 0
   perl: 5.10.0
@@ -24,4 +26,4 @@ requires:
 resources:
   bugtracker: http://github.com/perlpilot/Dancer-Plugin-TTHelpers/issues
   repository: git://github.com/perlpilot/Dancer-Plugin-TTHelpers.git
-version: 0.002
+version: 0.003

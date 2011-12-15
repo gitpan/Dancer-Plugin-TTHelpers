@@ -13,7 +13,8 @@ my %WriteMakefileArgs = (
   "AUTHOR" => "author = Jonathan Scott Duff <duff\@pobox.com>",
   "BUILD_REQUIRES" => {
     "Template" => 0,
-    "Test::More" => 0
+    "Test::More" => 0,
+    "Test::XPath" => 0
   },
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30"
@@ -24,12 +25,13 @@ my %WriteMakefileArgs = (
   "NAME" => "Dancer::Plugin::TTHelpers",
   "PREREQ_PM" => {
     "Dancer" => 0,
+    "HTML::FormHelpers" => 0,
     "Scalar::Util" => 0,
     "Try::Tiny" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t"
   }
