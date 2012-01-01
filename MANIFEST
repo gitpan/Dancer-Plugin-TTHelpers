@@ -6,8 +6,3 @@ Makefile.PL
 README
 docs/SubmittingPatches.pod
 lib/Dancer/Plugin/TTHelpers.pm
-t/00-basic.t
-t/01-button.t
-t/02-hidden.t
-t/03-text.t
-t/foo

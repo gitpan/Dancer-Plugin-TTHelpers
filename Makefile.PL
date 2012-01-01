@@ -13,7 +13,6 @@ my %WriteMakefileArgs = (
   "AUTHOR" => "author = Jonathan Scott Duff <duff\@pobox.com>",
   "BUILD_REQUIRES" => {
     "Template" => 0,
-    "Test::More" => 0,
     "Test::XPath" => 0
   },
   "CONFIGURE_REQUIRES" => {
@@ -31,9 +30,9 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.003",
+  "VERSION" => "0.004",
   "test" => {
-    "TESTS" => "t/*.t"
+    "TESTS" => ""
   }
 );
 
