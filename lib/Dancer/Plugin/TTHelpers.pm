@@ -1,6 +1,6 @@
 package Dancer::Plugin::TTHelpers;
 {
-  $Dancer::Plugin::TTHelpers::VERSION = '0.004';
+  $Dancer::Plugin::TTHelpers::VERSION = '0.005';
 }
 # ABSTRACT: Useful routines for generating HTML for use with Dancer + TT
 
@@ -27,7 +27,7 @@ hook 'before_template' => sub {
 
 
 sub css {
-    my $attributes = &process_attributes;
+    my $attributes = &HTML::FormHelpers::process_attributes;
     my ( $uri, $ie_cond ) = @_;
     $uri .= '.css' unless $uri =~ /\.css$/;
     return
@@ -39,7 +39,7 @@ sub css {
 }
 
 sub js {
-    my $attributes = &process_attributes;
+    my $attributes = &HTML::FormHelpers::process_attributes;
     my ( $uri, $ie_cond ) = @_;
     $uri .= '.js' unless $uri =~ /\.js$/;
     return
@@ -61,7 +61,7 @@ Dancer::Plugin::TTHelpers - Useful routines for generating HTML for use with Dan
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 
